@@ -19,7 +19,10 @@ let package = Package(
         .target(
             name: "Mustache",
             dependencies: [],
-            path: "Sources"
+            path: "Sources",
+            swiftSettings: [
+                .define("OBJC")
+            ]
         ),
         .testTarget(
             name: "MustacheTests",
